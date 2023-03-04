@@ -75,7 +75,7 @@ namespace L01_2020PM608_BLOG.Controllers {
             return Ok(comentarioExiste);
         }
 
-        //Método filtrado por una publicacion
+        //Método filtrado por una publicacion especifica
         [HttpGet]
         [Route("findbyuser/{publicacionid}")]
         public IActionResult buscar(int publicacionid) {
@@ -89,7 +89,7 @@ namespace L01_2020PM608_BLOG.Controllers {
             }
             return NotFound();
         }
-
+        
 
     }
 }
